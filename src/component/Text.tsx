@@ -130,6 +130,8 @@ export class Text extends Component<Props, State> {
 
   state: State = {};
 
+  static getWordsByLines = getWordsByLines;
+
   static getDerivedStateFromProps(nextProps: Props, prevState: State) {
     if (
       nextProps.width !== prevState.prevWidth ||
